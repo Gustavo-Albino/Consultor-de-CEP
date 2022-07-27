@@ -32,6 +32,7 @@ section {
     border-radius: 8px;
     background-color: #034C8C;
     box-shadow: inset 1px 1px 5px #034C8C;
+    overflow: hidden;
 }
 
 nav {
