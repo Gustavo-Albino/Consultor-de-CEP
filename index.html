@@ -7,12 +7,35 @@
     <title>Introdução ao jQuery e Ajax</title>
     <script type="text/javascript" src="index.js"></script>
     <script type="text/javascript" src="jquery-3.6.0-min.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1>Localização</h1>
+    <h2>Digite um CEP</h2>
     <input id="cep" type="text">
     <button type="button" onclick="consultarCep()">Consultar</button>
-    <section id="localizacao">
-
+    <section class="localizacao">
+        <ul>
+            <li><span>UF: </span><p class="uf"></p></li>
+            <li><span>Localidade: </span><p class="localidade"></p></li>
+            <li><span>Bairro: </span><p class="bairro"></p></li>
+            <li><span>Logradouro: </span><p class="logradouro"></p></li>
+            <li>DDD: <p class="ddd"></p></li>
+        </ul>
     </section>
 </body>
 </html>
+
+<!--
+    {cep: '30690-260', logradouro: 'Rua Poinciana', complemento: '', bairro: 'Lindéia (Barreiro)', localidade: 'Belo Horizonte', …}
+    bairro: "Lindéia (Barreiro)"
+    cep: "30690-260"
+    complemento: ""
+    ddd: "31"
+    gia: ""
+    ibge: "3106200"
+    localidade: "Belo Horizonte"
+    logradouro: "Rua Poinciana"
+    siafi: "4123"
+    uf: "MG"
+    -->
