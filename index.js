@@ -1,7 +1,7 @@
 function consultarCep() {
-    let cep = document.getElementById("cep").value
+    let cep = document.getElementById('cep').value
     let url = `https://viacep.com.br/ws/${cep}/json/`
-
+    let mapa = document.getElementById('mapa')
     
     $.ajax({
         url: url,
@@ -13,6 +13,9 @@ function consultarCep() {
             $('.bairro').html(response.bairro)
             $('.logradouro').html(response.logradouro)
             $('.ddd').html(response.ddd)
+
+            mapa.src = `https://servicodados.ibge.gov.br/api/v3/malhas/estados/${response.uf}`
+         
         }
     })
 }

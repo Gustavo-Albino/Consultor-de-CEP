@@ -12,16 +12,22 @@
 <body>
     <h1>Localização</h1>
     <h2>Digite um CEP</h2>
-    <input id="cep" type="text">
-    <button type="button" onclick="consultarCep()">Consultar</button>
     <section class="localizacao">
+        <nav>
+            <input id="cep" type="search">
+            <button id="btn" type="button" onclick="consultarCep()" onkeydown="PressionarEnter()">&#127859</button>
+        </nav>
         <ul>
             <li><span>UF: </span><p class="uf"></p></li>
             <li><span>Localidade: </span><p class="localidade"></p></li>
             <li><span>Bairro: </span><p class="bairro"></p></li>
             <li><span>Logradouro: </span><p class="logradouro"></p></li>
-            <li>DDD: <p class="ddd"></p></li>
+            <li><span>DDD: </span><p class="ddd"></p></li>
         </ul>
+
+        <article>
+            <img src="" alt=" " id="mapa">
+        </article>
     </section>
 </body>
 </html>
