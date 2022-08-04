@@ -7,27 +7,43 @@
     <title>Introdução ao jQuery e Ajax</title>
     <script type="text/javascript" src="index.js"></script>
     <script type="text/javascript" src="jquery-3.6.0-min.js"></script>
+    <link rel="stylesheet" href="bootstrap-5.2.0-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Localização</h1>
-    <h2>Digite um CEP</h2>
-    <section class="localizacao">
-        <nav>
-            <input id="cep" type="search">
-            <button id="btn" type="button" onclick="consultarCep()" onkeydown="PressionarEnter()">&#127859</button>
-        </nav>
-        <ul>
-            <li><span>UF: </span><p class="uf"></p></li>
-            <li><span>Localidade: </span><p class="localidade"></p></li>
-            <li><span>Bairro: </span><p class="bairro"></p></li>
-            <li><span>Logradouro: </span><p class="logradouro"></p></li>
-            <li><span>DDD: </span><p class="ddd"></p></li>
-        </ul>
-
-        <article>
-            <img src="" alt="Estado" id="mapa">
-        </article>
+    <nav class="navbar navbar-expand-dark bg-dark navbar_search" >
+        <a class="navbar-brand text-white navbar_title">Consulta CEP</a>
+        <section class="d-flex" role="search">
+            <input class="section-control me-2" type="search" placeholder="CEP" aria-label="Search" id="cep">
+            <button class="btn btn-outline-success" onclick="consultarCep()">Buscar</button>
+        </section>
+    </nav>
+    <section class="conteiner">
+        <span class="row">
+            <h1 id="cep_title">CEP</h1>
+        </span>
+        <span class="row table_conteiner">
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td>UF</td>
+                        <td id="uf"></td>
+                    </tr>
+                    <tr>
+                        <td>Localidade</td>
+                        <td id="localidade"></td>
+                    </tr>
+                    <tr>
+                        <td>Bairro</td>
+                        <td id="bairro"></td>
+                    </tr>
+                    <tr>
+                        <td>Logradouro</td>
+                        <td id="logradouro"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </span>
     </section>
 </body>
 </html>
