@@ -4,6 +4,10 @@
     overflow: hidden;
 }
 
+#cep {
+    text-align: center;
+}
+
 .row {
     margin-top: 20px;
 }
@@ -29,3 +33,4 @@
    width: 25vh;
    height: 25vh;
 }
+
