@@ -12,9 +12,8 @@ function consultarCep() {
             $('#bairro').html(response.bairro)
             $('#logradouro').html(response.logradouro)
             $('#cep_title').html(`CEP ${response.cep}`)
-
-            console.log(response)
-         
+            
+            mapa.setAttribute('src', `https://servicodados.ibge.gov.br/api/v3/malhas/estados/${response.uf}`)
         }
     })
 }

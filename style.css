@@ -23,3 +23,9 @@
 .navbar_search {
     padding: 10px;
 }
+
+#mapa {
+    padding: 20px;
+   width: 25vh;
+   height: 25vh;
+}
