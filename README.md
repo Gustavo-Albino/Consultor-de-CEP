@@ -5,7 +5,9 @@ API IBGE (https://servicodados.ibge.gov.br/api/docs/localidades#api-Distritos-es
 API ViaCEP (https://viacep.com.br/)
 
 Tecnologias Utilizadas no projeto:
-  HTML
-  CSS
-  JavaScript
-  biblioteca JQuery
+  HTML,
+  CSS,
+  JavaScript,
+  biblioteca JQuery,
+	Bootstrap
+	
