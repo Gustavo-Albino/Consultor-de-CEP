@@ -18,7 +18,16 @@
             <button class="btn btn-outline-success" onclick="consultarCep()">Buscar</button>
         </section>
     </nav>
-    <section class="conteiner">
+    
+    <div class="progress-bar-content">
+        <div class="conteiner div-progress-bar">
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+            </div>
+        </div>
+    </div>
+
+    <section class="conteiner cep">
         <span class="row">
             <h1 id="cep_title">CEP</h1>
         </span>
@@ -50,7 +59,13 @@
                 </tbody>
             </table>
         </span>
+    </section>
 
-        
+    <script>
+        $(function() {
+            $('.cep').hide()
+            $('.div-progress-bar').hide()
+        })
+    </script>
 </body>
 </html>

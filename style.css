@@ -30,7 +30,16 @@
 
 #mapa {
     padding: 20px;
-   width: 25vh;
-   height: 25vh;
+    width: 25vh;
+    height: 25vh;
 }
 
+.progress-bar-content {
+    margin-top: 100px;
+    overflow: hidden;
+}
+
+.div-progress-bar {
+    width: 40%;
+    margin: 0 auto;
+}
